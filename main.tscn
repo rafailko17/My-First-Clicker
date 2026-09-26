@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c07338gsr10tm"]
+
+[ext_resource type="Script" uid="uid://bmfpnaskyq7kd" path="res://control.gd" id="1_ig7tw"]
+
+[node name="Control" type="Control" unique_id=1493803762]
+layout_mode = 3
+anchor_left = 0.18800001
+anchor_top = 0.37500003
+anchor_right = 0.42200002
+anchor_bottom = 0.623
+offset_left = -235.576
+offset_top = -257.0
+offset_right = 668.85596
+offset_bottom = 244.29599
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="Button" type="Button" parent="." unique_id=75962377]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.086
+anchor_bottom = 0.148
+offset_left = 234.0
+offset_top = 249.0
+offset_right = 388.92798
+offset_bottom = 291.096
+text = "CLICK ME!"
+
+[node name="Label" type="Label" parent="." unique_id=1424026301]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30400002
+anchor_top = 0.5
+anchor_right = 0.30400002
+anchor_bottom = 0.5
+offset_left = 175.10397
+offset_top = -33.0
+offset_right = 457.10397
+offset_bottom = 268.0
+text = "CLICKS: 0"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
